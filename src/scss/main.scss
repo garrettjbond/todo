@@ -1,0 +1,144 @@
+/*************************
+* Imports
+*************************/
+@import url('https://fonts.googleapis.com/css?family=Baloo+Bhaina+2|Pacifico&display=swap');
+
+/*************************
+* UI Styles
+*************************/
+.addItem:hover{
+  background-color: #DA9DB7;
+  transition: .3s;
+}
+
+.deleteMe:hover{
+  color: red;
+  transition: .3s;
+}
+
+.listItem span:first-of-type:hover{
+  color: lightgreen;
+  transition: .3s;
+}
+
+p:hover{
+  color: grey;
+  transition: .3s;
+}
+
+/*************************
+* Generic Stylings
+*************************/
+body{
+  display: flex;
+  flex-direction: column;
+  margin: 0px;
+  width: 100%;
+  min-height: 100vh;
+  padding: 0;
+background: radial-gradient(circle, rgba(238,174,202,1) 0%, rgba(148,187,233,1) 100%);
+  font-family: 'Baloo Bhaina 2', cursive;
+  font-weight: 600;
+  color: black;
+}
+
+footer {
+  margin-top: 2em; 
+  text-align: center;
+}
+
+.hidden{
+  display: none;
+}
+
+h1{
+  text-align: center;
+  font-family: 'Pacifico', cursive;
+  color: black; 
+  font-size: 3em;
+}
+
+main{
+  flex: 1;
+  display:flex;
+  flex-direction: column;
+  align-items: center;
+  ul, li{
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+    text-align: center;
+    font-size: 1.25em;
+  }
+  li{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+    p{
+      margin: 0;
+      padding: 0px 5px 0px 5px;
+    }
+  }
+}
+li:last-of-type{
+  padding-bottom: 25px;
+}
+
+.list-form{
+  background-color: white;
+  max-width: 600px;
+  padding: 5%;
+  margin-top: 100px;
+  box-shadow: 0 8px 8px -6px black;
+  border-radius: 10%;
+  width: 80%;
+}
+
+.addItem{
+  background-color: rgba(238,174,202,1);
+  border-radius: 50%;
+  display: block;
+  margin: auto;
+  width: 55px;
+  height: 55px;
+  box-shadow: 0 8px 8px -6px black;
+  font-size: 3em;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+.addItem:focus{
+  outline: none;
+}
+
+.mark{
+  text-decoration: line-through;
+  color: rgb(157, 161, 161);
+}
+/*************************
+* Mobile Stylings
+*************************/
+
+
+
+
+/*************************
+* Tablet Stylings
+*************************/
+
+
+
+
+/*************************
+* Full Desktop Stylings
+*************************///************Desktop Stylings
+@media only screen and (min-width: 600px) {
+  .addItem{
+    float: right;
+    position: relative;
+    top: 20px;
+    left: 20px;
+  }
+}
