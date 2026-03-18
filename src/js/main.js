@@ -1,12 +1,8 @@
-$(".deleteMe").on("click", function () {
-  console.log($(this).parent().html());
-
+function deleteItem(){
   $(this).parent().remove();
-});
+}
 
-$("span").on("click", function () {
-  console.log($(this).siblings().text());
-
+function toggleCheckbox(){
   if ($(this).html() == '<i class="fa-regular fa-square-check"></i>') {
     $(this).html('<i class="fa-regular fa-square"></i>');
   }
@@ -15,11 +11,13 @@ $("span").on("click", function () {
   }
   $(this).toggleClass("mark");
   $(this).siblings().toggleClass("mark");
-});
+}
 
-$("button").on("click", function () {
-  console.log($(this).prev().children().last().html());
-
+function createNew(){
   $(".clonecopy:first-of-type").clone(true).appendTo("ul");
   $("ul").children().last().removeClass("hidden");
-});
+}
+
+$(".deleteMe").on("click", deleteItem);
+$(".toggleMe").on("click", toggleCheckbox);
+$(".addItem").on("click", createNew);
