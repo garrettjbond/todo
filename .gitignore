@@ -1,0 +1,13 @@
+# Build output
+dist/
+**/obj/
+**/bin/
+
+# Node
+node_modules/
+npm-debug.log
+
+# Database
+*.db
+*.db-shm
+*.db-wal
